@@ -87,8 +87,6 @@ jobs:
           cache: 'yarn'
       - name: Install and build
         run: yarn --immutable
-        env:
-          CI: true
       - uses: andresz1/size-limit-action@v1
         with:
           build_script: build:app
