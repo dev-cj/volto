@@ -89,4 +89,5 @@ jobs:
         run: yarn --immutable
       - uses: andresz1/size-limit-action@v1
         with:
-          build_script: build:app
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          skip_step: install
